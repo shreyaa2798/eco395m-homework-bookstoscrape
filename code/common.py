@@ -2,11 +2,11 @@ import requests
 from bs4 import BeautifulSoup
 
 
-def get_soup(url):
+def get_soup():
 
     """Takes a URL and returns a BeautifulSoup() instance representing the HTML of the page."""
 
-    response = requests.get(url)
+    response = requests.get()
     html = response.text
     soup = BeautifulSoup(html, "html.parser")
 

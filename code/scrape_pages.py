@@ -3,7 +3,7 @@ from common import get_soup
 
 def scrape_page(num):
     """Takes a page and returns a list of links to the book that are on the page."""
-
+    scrape_page = (1)
     return None
 
 

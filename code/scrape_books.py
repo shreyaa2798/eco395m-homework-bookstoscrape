@@ -3,7 +3,7 @@ from common import get_soup
 
 def extract_price(price_str):
     """Extracts the price form the string in the product description as a float."""
-
+    price = book_price[0].text.strip()
     return None
 
 
@@ -24,7 +24,7 @@ def get_category(soup):
 
 def get_title(soup):
     """Extracts the title from the BeautifulSoup instance representing a book page as a string."""
-
+    book_title = books.h3.a["title"]
     return None
 
 
